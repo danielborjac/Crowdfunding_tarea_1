@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- título de la página-->
+    <title>Crowfunding</title>
+    <!-- se añade íconos para mejorar el diseño-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- se añade bootstrap para la distribución -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- estilo css -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+<body>
+  
+  <!-- Banner principal -->
+  <header class="header" style="background-color: #1c1c1c">
+    <div class="header_top">
+      <div class="container-top">
+        <div class="contact_link-container">
+          <a href="">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>
+              40805 direción falsa C14
+            </span>
+          </a>
+          <a href="" class="contact_link2">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              0980206227
+            </span>
+          </a>
+          <a href="" class="contact_link3">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>
+              danielborjac@hotmail.es
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-top">
+      <nav class="nav">
+        <a class="nav-logo" href="index.html">CROWFUNDING</a>
+        <a class="nav-logo" style="text-align: end;" href="index.html">Volver a inicio</a>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+  <main>
+    <section class="contact layout_padding">
+      <div class="container">
+        <div class="reward_box">
+          <div class="heading_container heading_center">
+            <h2>Ingresa una cifra a aportar</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <form id="royalty">
+                <div class="contact_form-container">
+                  <div class="heading_container heading_center">
+                    <h6>Al contribuir con una cifra mayor a 100$, su nombre será destacado en la sección de top donadores, simbolizando su generoso apoyo. Recibirá un Certificado de Donante y un exclusivo obsequio al finalizar el proyecto, además, recibirá un retorno estimado del 7%</h6>
+                  </div>
+                  <div>
+                    <div>
+                      <select name="value">
+                        <option selected value="0">Cifra que desea aportar</option>
+                        <option value="100">$100</option>
+                        <option value="150">$150</option>
+                        <option value="200">$200</option>
+                        <option value="300">$300</option>
+                        <option value="500">$500</option>
+                        <option value="750">$750</option>
+                        <option value="1000">$1000</option>
+                        <option value="1500">$1500</option>
+                        <option value="2000">$2000</option>
+                        <option value="5000">$5000</option>
+                        <option value="10000">$10000</option>
+                      </select>
+                    </div>
+                    <div>
+                      <input type="text" name="name" placeholder="Nombre completo" />
+                    </div>
+                    <div>
+                      <input type="email" name="email" placeholder="Correo" />
+                    </div>
+                    <div>
+                      <input type="number" name="number" placeholder="Número teléfono" pattern="/^-?\d+\.,?\d*$/" onKeyPress="if(this.value.length==10) return false;"/>
+                    </div>
+                    <div class="">
+                      <input type="text" name="message" placeholder="Mensaje (opcional)" class="message_input" />
+                    </div>
+                    <div class="btn-box">
+                      <button class="btn-2" onclick = "saveRoyalty()"> DONAR AHORA </button>
+                    </div>
+                  </div>
+                </div>
+                <script src="js/savedata.js"></script>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sección información-->
+
+    <section class="info ">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-6">
+            <div class="info_info">
+              <h5>
+                Contáctanos
+              </h5>
+            </div>
+            <div class="info_contact">
+              <a href="" class="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  40805 direción falsa C14
+                </span>
+              </a>
+              <a href="" class="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  0980206227
+                </span>
+              </a>
+              <a href="" class="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  danielborjac@hotmail.es
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info_form ">
+              <div class="social_box">
+                <a href="">
+                  <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- pie de página -->
+  <footer class="container-top footer">
+    <p>
+      &copy; <span>2024</span>Todos los derechos reservados
+    </p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- título de la página-->
+    <title>Crowfunding</title>
+    <!-- se añade íconos para mejorar el diseño-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- se añade bootstrap para la distribución -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- estilo css -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+<body>
+  
+  <!-- Banner principal -->
+  <header class="header" style="background-color: #1c1c1c">
+    <div class="header_top">
+      <div class="container-top">
+        <div class="contact_link-container">
+          <a href="">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>
+              40805 direción falsa C14
+            </span>
+          </a>
+          <a href="" class="contact_link2">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              0980206227
+            </span>
+          </a>
+          <a href="" class="contact_link3">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>
+              danielborjac@hotmail.es
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-top">
+      <nav class="nav">
+        <a class="nav-logo" href="index.html">CROWFUNDING</a>
+        <a class="nav-logo" style="text-align: end;" href="index.html">Volver a inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact layout_padding">
+      <div class="container">
+        <div class="reward_box">
+          <div class="heading_container heading_center">
+            <h2>Selecciona tu recompenza</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <form id="reward">
+                <div class="contact_form-container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="reward_info">
+                        <div class="detail-box">
+                          <h6>
+                            Recompenza por $25
+                          </h6>
+                          <p>
+                            Se le otorgará un libro de última edición sobre las especies mas emblemáticas del Ecuador.
+                          </p>
+                          <div class="reward_box">
+                            <input type="radio" id="value1" name="check-substitution-2" value="25" />
+                            <label class="btn btn-default" for="value1">contribuye $25</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="reward_info">
+                        <div class="detail-box">
+                          <h6>
+                            Recompenza por $40
+                          </h6>
+                          <p>
+                            Obtendrá entradas para 2 personas a las reservas ecológicas con las últimas especies en extinción
+                          </p>
+                          <div class="reward_box">
+                            <input type="radio" id="value2" name="check-substitution-2" value="30" />
+                            <label class="btn btn-default" for="value2">contribuye $30</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="reward_info">
+                        <div class="detail-box">
+                          <h6>
+                            Recompenza por $50
+                          </h6>
+                          <p>
+                            Se le otorgará un diploma por su contribución y su nombre se exhibirá en un mural en todas las reservas ecológicas participantes
+                          </p>
+                          <div class="reward_box">
+                            <input type="radio" id="value3" name="check-substitution-2" value="40" />
+                            <label class="btn btn-default" for="value3">contribuye $40</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="reward_info">
+                        <div class="detail-box">
+                          <h6>
+                            Recompenza por $70
+                          </h6>
+                          <p>
+                            Obtendrá entradas para 2 personas a las reservas ecológicas y se le realizará una entrevista que será publicado en nuestra web.
+                          </p>
+                          <div class="reward_box">
+                            <input type="radio" id="value4" name="check-substitution-2" value="50" />
+                            <label class="btn btn-default" for="value4">contribuye $50</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                  <div>
+                    <div>
+                      <input type="text" name="name" placeholder="Nombre completo" />
+                    </div>
+                    <div>
+                      <input type="email" name="email" placeholder="Correo" />
+                    </div>
+                    <div>
+                      <input type="number" name="number" placeholder="Número teléfono" pattern="/^-?\d+\.,?\d*$/" onKeyPress="if(this.value.length==10) return false;"/>
+                    </div>
+                    <div class="">
+                      <input type="text" name="message" placeholder="Mensaje (opcional)" class="message_input" />
+                    </div>
+                    <div class="btn-box">
+                      <button class="btn-2" onclick = "saveReward()"> DONAR AHORA </button>
+                    </div>
+                  </div>
+                </div>
+                <script src="js/savedata.js"></script>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sección información-->
+
+    <section class="info ">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-6">
+            <div class="info_info">
+              <h5>
+                Contáctanos
+              </h5>
+            </div>
+            <div class="info_contact">
+              <a href="" class="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  40805 direción falsa C14
+                </span>
+              </a>
+              <a href="" class="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  0980206227
+                </span>
+              </a>
+              <a href="" class="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  danielborjac@hotmail.es
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info_form ">
+              <div class="social_box">
+                <a href="">
+                  <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- pie de página -->
+  <footer class="container-top footer">
+    <p>
+      &copy; <span>2024</span>Todos los derechos reservados
+    </p>
+  </footer>
+
+</body>
+</html>

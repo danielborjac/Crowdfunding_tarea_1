@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- título de la página-->
+    <title>Crowdfunding</title>
+    <!-- se añade íconos para mejorar el diseño-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- se añade bootstrap para la distribución -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- estilo css -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    
+    <!-- Banner principal -->
+
+    <div class="banner">
+      <div class="banner_bg_box">
+        <div class="img-box">
+          <!--<img src="imagenes/hero-bg.jpg" alt="">-->
+          <div class="slides">
+            <img src="imagenes/hero-bg.jpg" alt="slide image" class="slide">
+            <img src="imagenes/hero-bg-2.jpg" alt="slide image" class="slide">
+            <img src="imagenes/hero-bg-3.jpg" alt="slide image" class="slide">
+          </div>
+          <script src="js/carousel.js"></script>
+        </div>
+      </div>
+
+      <header class="header">
+        
+        <!-- container con datos de la página -->
+        
+        <div class="header_top">
+          <div class="container-top">
+            <div class="contact_link-container">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  40805 direción falsa C14
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  0980206227
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  danielborjac@hotmail.es
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>   
+        
+        <!-- navegador de la página-->
+
+        <div class="container-top">
+          <nav class="nav">
+            <a class="nav-logo" href="index.html">CROWFUNDING</a>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="nav-list" id="navList">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#donate"> donar ahora </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Solicitud</a>
+              </li>
+            </ul>
+          </nav>
+          <script>
+            const navToggle = document.getElementById("navToggle");
+            const navList = document.getElementById("navList");
+        
+            navToggle.addEventListener("click", () => {
+              navList.classList.toggle("nav-list--visible");
+            });
+          </script>
+        </div>
+      </header>
+
+      <!-- Contenido del banner principal -->
+
+      <section class="banner_content">
+        <div class="banner_row">
+          <div class="row">
+            <div class="col-md-6" style="margin-bottom: 40px">
+              <div class="detail-box">
+                <h1>
+                  ¡El GUACAMAYO VERDE REAL <br>
+                  <span>
+                    NECESITA TU AYUDA!
+                  </span>
+                </h1>
+                <p> El hermoso ave insignia del Ecuador se encuentra en peligro crítico de extinción, con menos de 1000 ejemplares en la naturaleza y una tendencia decreciente. </p>
+                <div class="btn-box">
+                  <a href="#about" class="btn-1"> Mas información</a>
+                  <a href="#donate" class="btn-2">Donar ahora</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="detail-box">
+                <div class="row">
+                  <div class="col-6 col-md-6">
+                    <div class="progress-bar-container">
+                      <div class="wrapper">
+                        <div class="circular-bar">
+                          <div class="percent">0%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6">
+                    <h3 style="margin-bottom: -5px;" id="value"> </h3>
+                    <h5 id="goal"></h5><br/>
+                    <h3 style="margin-bottom: -5px;" id="partner"></h3>
+                    <h5>Patrocinadores</h5><br/>
+                    <h3 id="countdown"></h3>
+                    <h5>Tiempo restante</h5>
+                  </div> 
+                  <script src="js/stats.js"></script> 
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+
+    <!-- Contenido introducción del crowfunding -->
+
+    <main>
+      <section id="about" class="intro layout_padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 px-0">             
+              <img src="imagenes/about-img.jpg" alt="" class="img-about"/>
+            </div>
+            <div class="col-md-6 px-0">
+              <div class="detail-box">
+                <div class="heading_container ">
+                  <h2>
+                    ¿El futuro del guacamayo verde?
+                  </h2>
+                </div>
+                <p>
+                  Las principales causas con respecto a la desaparición de este hermoso ejemplar son la deforestación que provoca 
+                  la pérdida de su hábitat y el tráfico ilegal ya que es una subepecie muy cotizada como mascota en el mundo.
+                  <br/><br/>
+                  Las fundaciónes Ecológica pueden ser una de las soluciones ante la destrucción de su hábitat y el tráfico ilegal de su especie,
+                  El dinero recaudado se trasladará directamente ante la organización privada <strong>Rescate Inc.</strong> que les proporcionará 
+                  todos los medios para su supervivencia
+                </p>
+                <div class="btn-box">
+                  <a href="#donate" class="btn-2"> donar ahora </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sección de donaciones -->
+
+      <section id="donate" class="donation layout_padding">
+        <div class="container">
+          <div class="heading_container heading_center">
+            <h2>
+              Todo tipo de donación es bienvenida
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box ">
+                <div class="img-box">
+                  <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="detail-box">
+                  <h6>
+                    Aportación voluntaria
+                  </h6>
+                  <p>
+                  Apoya a la causa de forma altruista, cualquier cifra es aceptada para apoyar al proyecto y cumplir nuestras metas.
+                  </p>
+                  <div class="btn-box">
+                    <a href="donate.html" class="btn-2"> Contribuye </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box ">
+                <div class="img-box">
+                  <i class="fa fa-gift fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="detail-box">
+                  <h6>
+                    Aportación con recompenzas
+                  </h6>
+                  <p>
+                    Tu contribución será recompenzada dependiendo de la cifra que aportes.                  
+                  </p>
+                  <br/>
+                  <div class="btn-box">
+                    <a href="reward.html" class="btn-2"> Contribuye </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box ">
+                <div class="img-box">
+                  <i class="fa fa-money fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="detail-box">
+                  <h6>
+                    De Royalties
+                  </h6>
+                  <p>
+                    Se recompenzará con un porcentaje de lo recaudado, además, su nombré tendrá una mención honorífica en la página.
+                  </p>
+                  <div class="btn-box">
+                    <a href="royalty.html" class="btn-2"> Contribuye </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sección top donadores -->
+
+      <section class="donor layout_padding">
+        <div class="container ">
+          <div class="heading_container heading_center">
+            <h2>
+              TOP DONADORES Y PATROCINADORES
+            </h2>
+          </div>
+          <div class="carousel">
+            <div class="group">
+              <div class="row">
+                <div class="col-4 col-md-4">
+                  <div class="box ">
+                    <div class="img-box">
+                      <img src="imagenes/user1.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h4>
+                        Steve Schutjer
+                      </h4>
+                      <p>
+                        ¡Apoyó a la causa con una cifra de $500!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-md-4">
+                  <div class="box ">
+                    <div class="img-box">
+                      <img src="imagenes/user2.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h4>
+                        Elke Caristo
+                      </h4>
+                      <p>
+                        ¡Apoyó a la causa con una cifra de $750!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-md-4">
+                  <div class="box ">
+                    <div class="img-box">
+                      <img src="imagenes/user3.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h4>
+                        Nicole Peschl
+                      </h4>
+                      <p>
+                        ¡Apoyó a la causa con una cifra de $1000!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- se Añade `aria-hidden` para ocultar las tarjetas duplicadas al dar el efecto carrusel -->
+
+            <div aria-hidden class="group">
+              <div class="row">
+                <div class="col-4 col-md-4">
+                  <div class="box ">
+                    <div class="img-box">
+                      <img src="imagenes/user1.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h4>
+                        Steve Schutjer
+                      </h4>
+                      <p>
+                        ¡Apoyó a la causa con una cifra de $500!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-md-4">
+                  <div class="box ">
+                    <div class="img-box">
+                      <img src="imagenes/user2.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h4>
+                        Elke Caristo
+                      </h4>
+                      <p>
+                        ¡Apoyó a la causa con una cifra de $750!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-md-4">
+                  <div class="box ">
+                    <div class="img-box">
+                      <img src="imagenes/user3.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h4>
+                        Nicole Peschl
+                      </h4>
+                      <p>
+                        ¡Apoyó a la causa con una cifra de $1000!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sección contacto -->
+
+      <section id="contact" class="contact layout_padding">
+        <div class="contact_bg_box">
+          <div class="img-box">
+            <img src="imagenes/contact-bg.jpg" alt="">
+          </div>
+        </div>
+        <div class="container">
+          <div class="heading_container heading_center">
+            <h2>
+              Solicita un Crowdfunding
+            </h2>
+            <h5>Existen otras especies que necesitan ayuda. !Puedes recomendar un tema para un futuro proyecto!</h5>
+          </div>
+          <div class="">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <form id="form">
+                  <div class="contact_form-container">
+                    <div>
+                      <div>
+                        <input type="text" name="name" placeholder="Nombre completo" />
+                      </div>
+                      <div>
+                        <input type="email" name="email" placeholder="Correo" />
+                      </div>
+                      <div>
+                        <input type="number" name="number" placeholder="Número teléfono" pattern="/^-?\d+\.,?\d*$/" onKeyPress="if(this.value.length==10) return false;"/>
+                      </div>
+                      <div class="">
+                        <input type="text" name="message" placeholder="Tema para recaudar"/>
+                      </div>
+                      <div class="">
+                        <input type="text" name="description" placeholder="una breve descripción" class="message_input" />
+                      </div>
+                      <div class="btn-box">
+                        <button class="btn-2" onclick = "saveForm()"> Enviar </button>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="js/savedata.js"></script>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- sección información-->
+
+      <section class="info ">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-6">
+              <div class="info_info">
+                <h5>
+                  Contáctanos
+                </h5>
+              </div>
+              <div class="info_contact">
+                <a href="" class="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>
+                    40805 direción falsa C14
+                  </span>
+                </a>
+                <a href="" class="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    0980206227
+                  </span>
+                </a>
+                <a href="" class="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    danielborjac@hotmail.es
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info_form ">
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- pie de página -->
+    <footer class="container-top footer">
+      <p>
+        &copy; <span>2024</span>Todos los derechos reservados
+      </p>
+    </footer>
+
+  </body>
+
+</html>
